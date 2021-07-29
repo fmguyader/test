@@ -15,4 +15,4 @@
   - name: file configuration copy
     copy: 
       src: conf/
-    dest: /
+      dest: /
