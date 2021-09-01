@@ -37,10 +37,22 @@
           - docker-ce-cli
           - containerd.io
         update_cache: yes
+      notify: start docker service
 
     # démarrage du service
+    # - name: start docker service
+    #   service:
+    #     name: docker
+    #     state: started
+    #     enabled: yes
+
+    # handler => même principe que les tasks. Quand je termine la tâche je lance le 
+      # handler via le name dans le notify inscrit en bas de la tâche
+    
+  handlers:
     - name: start docker service
       service:
         name: docker
         state: started
         enabled: yes
+  
