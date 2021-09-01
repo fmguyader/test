@@ -1,2 +1,6 @@
-192.168.0.1 ansible_user=fm
-192.168.0.2 ansible_user=fm
+[group1]
+13.53.45.63 ansible_user=ansible
+
+
+; 192.168.0.1 ansible_user=fm
+; 192.168.0.2 ansible_user=fm
