@@ -1,5 +1,0 @@
----
-- hosts: group1
-  become: true
-  roles: 
-    - install-docker
